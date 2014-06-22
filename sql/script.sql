@@ -17,7 +17,15 @@ GO
 CREATE INDEX user_first_name on [users] (firstname, lastname)
 GO
 
-INSERT INTO [dbo].[users] (create_dt_tm, create_user_id, firstName, lastname, email, password, delete_flag) VALUES (getDate(), 1, 'admin', 'admin', 'admin@redmart.com', 'admin', 0)
+INSERT INTO [dbo].[users] (create_dt_tm, create_user_id, firstName, lastname, email, password, delete_flag) VALUES (getDate(), 1, 'admin1', 'admin2', 'admin@redmart.com', 'admin', 0)
+GO
+INSERT INTO [dbo].[users] (create_dt_tm, create_user_id, firstName, lastname, email, password, delete_flag) VALUES (getDate(), 1, 'user1', 'user2', 'user@redmart.com', 'user', 0)
+GO
+INSERT INTO [dbo].[users] (create_dt_tm, create_user_id, firstName, lastname, email, password, delete_flag) VALUES (getDate(), 1, 'abc1', 'abc2', 'abc@redmart.com', 'abc', 0)
+GO
+INSERT INTO [dbo].[users] (create_dt_tm, create_user_id, firstName, lastname, email, password, delete_flag) VALUES (getDate(), 1, 'xyz1', 'xyz2', 'xyz@redmart.com', 'xyz', 0)
+GO
+INSERT INTO [dbo].[users] (create_dt_tm, create_user_id, firstName, lastname, email, password, delete_flag) VALUES (getDate(), 1, 'pqr1', 'pqr2', 'pqr@redmart.com', 'pqr', 0)
 GO
 
 -- Creates Customer table --
