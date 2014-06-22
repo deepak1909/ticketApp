@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache>
+    <defaultCache
+        name="defaut"
+        maxElementsInMemory="50"
+        eternal="false"
+        timeToIdleSeconds="2000"
+        timeToLiveSeconds="20000"
+        overflowToDisk="true"
+        diskPersistent="true"
+        memoryStoreEvictionPolicy="LRU"
+        /> 
+     <cache
+        name="microsite"
+        maxElementsInMemory="50"
+        eternal="false"
+        overflowToDisk="true"
+        diskPersistent="true"
+        memoryStoreEvictionPolicy="LRU"
+        />   
+</ehcache>

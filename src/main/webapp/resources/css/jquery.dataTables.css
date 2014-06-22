@@ -1,0 +1,322 @@
+
+/*
+ * Table
+ */
+table.dataTable {
+	margin: 0 auto;
+	clear: both;
+	width: 100%;
+}
+
+table.dataTable thead th {
+	padding: 3px 18px 3px 10px;
+	border-bottom: 1px solid black;
+	font-weight: bold;
+	*cursor: hand;
+}
+
+table.dataTable tfoot th {
+	padding: 3px 18px 3px 10px;
+	border-top: 1px solid black;
+	font-weight: bold;
+}
+
+table.dataTable td {
+	padding: 3px 10px;
+}
+
+table.dataTable td.center,
+table.dataTable td.dataTables_empty {
+	text-align: center;
+}
+
+table.dataTable tr.odd { background-color: #E2E4FF; }
+table.dataTable tr.even { background-color: white; }
+
+.tf-admin-table-data table thead tr th {
+	background: url("../images/dataTables/sort_both.png") no-repeat scroll right center transparent;
+}
+
+/*
+ * Table wrapper
+ */
+.dataTables_wrapper {
+	position: relative;
+	clear: both;
+	*zoom: 1;
+}
+
+
+/*
+ * Page length menu
+ */
+.dataTables_length {
+	float: left;
+}
+
+
+/*
+ * Filter
+ */
+.dataTables_filter {
+	float: right;
+	text-align: right;
+}
+
+.dataTables_filter .searchBox {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D2D2D2;
+    color: #434343;
+    font-size: 12px;
+    margin-bottom: 5px;
+    padding: 0.3em 0.5em;
+}
+
+
+/*
+ * Table information
+ */
+.dataTables_info {
+	clear: both;
+	float: left;
+}
+
+
+/*
+ * Pagination
+ */
+.dataTables_paginate {
+	float: right;
+	text-align: right;
+	padding: 10px;
+	font-size: 14px;
+}
+
+/* Two button pagination - previous / next */
+.paginate_disabled_previous,
+.paginate_enabled_previous,
+.paginate_disabled_next,
+.paginate_enabled_next {
+	height: 19px;
+	float: left;
+	cursor: pointer;
+	*cursor: hand;
+	color: #111 !important;
+}
+.paginate_disabled_previous:hover,
+.paginate_enabled_previous:hover,
+.paginate_disabled_next:hover,
+.paginate_enabled_next:hover {
+	text-decoration: none !important;
+}
+.paginate_disabled_previous:active,
+.paginate_enabled_previous:active,
+.paginate_disabled_next:active,
+.paginate_enabled_next:active {
+	outline: none;
+}
+
+.paginate_disabled_previous,
+.paginate_disabled_next {
+	color: #666 !important;
+}
+.paginate_disabled_previous,
+.paginate_enabled_previous {
+	padding-left: 23px;
+}
+.paginate_disabled_next,
+.paginate_enabled_next {
+	padding-right: 23px;
+	margin-left: 10px;
+}
+
+.paginate_enabled_previous { background: url('../images/dataTables/back_enabled.png') no-repeat top left; }
+.paginate_enabled_previous:hover { background: url('../images/dataTables/back_enabled_hover.png') no-repeat top left; }
+.paginate_disabled_previous { background: url('../images/dataTables/back_disabled.png') no-repeat top left; }
+
+.paginate_enabled_next { background: url('../images/dataTables/forward_enabled.png') no-repeat top right; }
+.paginate_enabled_next:hover { background: url('../images/dataTables/forward_enabled_hover.png') no-repeat top right; }
+.paginate_disabled_next { background: url('../images/dataTables/forward_disabled.png') no-repeat top right; }
+
+/* Full number pagination */
+.paging_full_numbers {
+	height: 22px;
+	line-height: 22px;
+}
+.paging_full_numbers a:active {
+	outline: none
+}
+.paging_full_numbers a:hover {
+	text-decoration: none;
+}
+
+.paging_full_numbers a.paginate_button,
+.paging_full_numbers a.paginate_active {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 2px 5px;
+	margin: 0 3px;
+	cursor: pointer;
+	*cursor: hand;
+}
+
+.paging_full_numbers a.paginate_button {
+	color: rgb(83, 83, 83);
+}
+
+.paging_full_numbers a.paginate_active, .paging_full_numbers a.paginate_button:hover {
+    background: none repeat scroll 0 0 rgb(0, 121, 193);
+    color: rgb(255, 255, 255);
+}	
+
+.dataTables_paginate a.paginate_button_disabled, .dataTables_paginate a.paginate_button_disabled:hover {
+    color: rgb(204, 204, 204);
+    cursor: auto;
+}
+.dataTables_paginate a.paginate_button_disabled:hover {
+    background: none repeat scroll 0 0 transparent;
+}
+
+
+/*
+ * Processing indicator
+ */
+.dataTables_processing {
+	position: absolute;
+	top: 70px;
+	left: 50%;
+	width: 250px;
+	height: 20px;
+	margin-left: -125px;
+	margin-top: -11px;
+	padding: 8px 0 2px 0;
+	border: 1px solid #ddd;
+	text-align: center;
+	color: #0079C1;
+	font-size: 14px;
+	background-color: white;
+	position: absolute;
+}
+
+/*
+ * Sorting
+ */
+.sorting { /*background: url('../images/dataTables/sort_both.png') no-repeat center right; */}
+.sorting_asc { background: url('../images/dataTables/sort_asc.png') no-repeat center right; }
+.sorting_desc { background: url('../images/dataTables/sort_desc.png') no-repeat center right; }
+
+.sorting_asc_disabled { background: url('../images/dataTables/sort_asc_disabled.png') no-repeat center right; }
+.sorting_desc_disabled { background: url('../images/dataTables/sort_desc_disabled.png') no-repeat center right; }
+ 
+table.dataTable thead th:active,
+table.dataTable thead td:active {
+	outline: none;
+}
+
+
+/*
+ * Scrolling
+ */
+.dataTables_scroll {
+	clear: both;
+}
+
+.dataTables_scrollBody {
+	*margin-top: -1px;
+	-webkit-overflow-scrolling: touch;
+}
+
+
+/* --- Custom pagination styles ----*/
+.paginate_disabled_previous, .paginate_enabled_previous, .paginate_disabled_next, .paginate_enabled_next {
+    color: rgb(17, 17, 17) !important;
+    cursor: pointer;
+    float: left;
+    height: 19px;
+}
+.paginate_disabled_previous:hover, .paginate_enabled_previous:hover, .paginate_disabled_next:hover, .paginate_enabled_next:hover {
+    text-decoration: none !important;
+}
+.paginate_disabled_previous:active, .paginate_enabled_previous:active, .paginate_disabled_next:active, .paginate_enabled_next:active {
+    outline: medium none;
+}
+.paginate_disabled_previous, .paginate_disabled_next {
+    color: rgb(102, 102, 102) !important;
+}
+.paginate_disabled_previous, .paginate_enabled_previous {
+    padding-left: 23px;
+}
+.paginate_disabled_next, .paginate_enabled_next {
+    margin-left: 10px;
+    padding-right: 23px;
+}
+.paginate_disabled_previous {
+    background: url("../images/dataTables/back_disabled.png") no-repeat scroll left top transparent;
+}
+.paginate_enabled_previous {
+    background: url("../images/dataTables/back_enabled.png") no-repeat scroll left top transparent;
+}
+.paginate_enabled_previous:hover {
+    background: url("../images/dataTables/back_enabled_hover.png") no-repeat scroll left top transparent;
+}
+.paginate_disabled_next {
+    background: url("../images/dataTables/forward_disabled.png") no-repeat scroll right top transparent;
+}
+.paginate_enabled_next {
+    background: url("../images/dataTables/forward_enabled.png") no-repeat scroll right top transparent;
+}
+.paginate_enabled_next:hover {
+    background: url("../images/dataTables/forward_enabled_hover.png") no-repeat scroll right top transparent;
+}
+table.display {
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+}
+table.display thead th {
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 3px 18px 3px 10px;
+}
+table.display tfoot th {
+    border-top: 1px solid black;
+    font-weight: bold;
+    padding: 3px 18px 3px 10px;
+}
+table.display tr.heading2 td {
+    border-bottom: 1px solid rgb(170, 170, 170);
+}
+table.display td {
+    padding: 3px 10px;
+}
+table.display td.center {
+    text-align: center;
+}
+.sorting_asc {
+     background: url("../images/dataTables/sort_asc.png") no-repeat scroll 95% center #DCF0FC !important;
+}
+.sorting_desc {
+	background: url("../images/dataTables/sort_desc.png") no-repeat scroll 95% center #DCF0FC !important;
+}
+.sorting {
+   background: url("../images/dataTables/sorting_both_new.png") no-repeat scroll 95% center #DCF0FC !important;
+}
+.sorting_asc_disabled {
+    background: url("../images/dataTables/sort_asc_disabled.png") no-repeat scroll right center transparent !important;
+}
+.sorting_desc_disabled {
+    background: url("../images/dataTables/sort_desc_disabled.png") no-repeat scroll right center transparent  !important;
+}
+.tf-admin-table-data a.reset-link {
+	margin: 10px 150px 0 10px;
+}
+.tf-admin-table-data .tf-admin-search select {
+	 margin: 0.1em 0.5em 0 !important;
+}	
+.dataTables_info {
+	font-size: 14px;
+	padding: 10px;
+}
+
+div.innerDetails { display: none; }
